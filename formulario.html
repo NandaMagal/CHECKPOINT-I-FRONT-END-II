@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Login - CIDADES TURÍSTICAS</title>
+</head>
+
+<body class="estilo">
+    <header id="header" class="fixed-top">
+        <div>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-black navbar-default">
+                <a class="navbar-brand" href="#"><img src="./imagen/LOGO VIAJEM.jpg" class="logo"> </a>
+                <button class=" navbar-toggler " type="button " data-bs-toggle="collapse " data-bs-target="#navbarScroll " aria-controls="navbarScroll " aria-expanded="false " aria-label="Toggle navigation ">
+                        <span class="navbar-toggler-icon "></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav ml-auto ">
+                        <li class="nav-item">
+                            <a class="nav-link active " aria-current="page " href="/index.html">Home</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link " href="./itensincluidos.html">Itens Incluidos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="formulario.html">Login</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container p-5 m-5 border justify-content-center align-items-center ">
+        <div class="mb-3 mt-3 d-flex justify-content-center align-items-center ">
+            <center>
+                <img class="img-fluid mb-3 mt-3 " src="./imagen/LOGO VIAJEM.jpg" alt="viajens">
+                </img>
+                <form label for="exampleInputEmail1 " class="form-label ">Endereço Email</label>
+                    <input type="email " class="form-control " id="exampleInputEmail1 " aria-describedby="emailHelp ">
+
+                    <div class="mb-3 ">
+                        <label for="exampleInputPassword1 " class="form-label ">Senha</label>
+                        <input type="password " class="form-control " id="exampleInputPassword1 ">
+                    </div>
+                    <button type="submit " class="btn btn-primary ">Enviar</button>
+                </form>
+            </center>
+        </div>
+    </div>
+
+
+    <div class="formulário ">
+        <fieldset>
+            <legend>INCLUA SEUS DADOS PESSOAIS PARA RECEBER NOVIDADES</legend>
+            <form action="login " method="POST ">
+                <p><label>Nome</label>
+                    <input type="text " required name="usuario " maxlength="100 " placeholder="Nome ">
+                </p>
+                <p><label>Sobrenome</label>
+                    <input type="text " required sobrenome="usuario " maxlength="50 " placeholder="Sobrenome ">
+                </p>
+                <p><label>Endereço:</label>
+                    <input type="text " required name="usuario " maxlength="100 " placeholder="Insira seu Endereço ">
+                </p>
+                <p><label>Telefone:</label>
+                    <input type="text " required name="usuario " placeholder="Telefone ">
+                </p>
+                <p> <label>Email</label>
+                    <input type="email " required name="usuario " placeholder="Informe seu email ">
+                </p>
+                <p><label for="data ">Data de Nascimento</label>
+                    <input type="date " required name="data " id="data " min="1930-01-01 " max="2021-11-01 ">
+                </p>
+                <p> <button class="botao " type="submit ">Enviar</button>
+                    <button class="botao " type="reset ">Cancelar</button>
+                </p>
+            </form>
+            </legend>
+        </fieldset>
+    </div>
+
+    <div class="formulário ">
+        <fieldset>
+            <legend>NOVO USUÁRIO</legend>
+            <legend>CADASTRE SEU LOGIN E SUA SENHA</legend>
+            <form action="login " method="POST ">
+                <p> <label>Usuário</label>
+                    <input type="text " required name=" usuario " placeholder="Insira uma Login com no minio caracteres ">
+                </p>
+                <p> <label>Senha</label>
+                    <input type="password " required name=" senha " placeholder="Insira uma senha de 6 a 8 caracteres ">
+                </p>
+                <p> <label for="Deixe seu comentário: "></label>
+                    <textarea name="comentarios " id="comentarios ">Sugestões</textarea>
+                </p>
+                <p> <button class="botao " type="submit ">Enviar</button>
+                    <button class="botao " type="reset ">Cancelar</button>
+                </p>
+            </form>
+        </fieldset>
+    </div>
+
+    <div class="formulário ">
+        <fieldset>
+            <legend>USUÁRIO JÁ EXISTENTE</legend>
+            <legend>INSIRA SEU LOGIN E SUA SENHA</legend>
+            <form action="login " method="POST ">
+                <p> <label>Usuário</label>
+                    <input type="text " required name "usuario " placeholder="Insira uma Login com no minio caracteres ">
+                </p>
+                <p> <label>Senha</label>
+                    <input type="password " required name "senha " placeholder="Insira uma senha de 6 a 8 caracteres ">
+                </p>
+                <p> <button class="botao " type="submit ">Enviar</button>
+                    <button class="botao " type="reset ">Cancelar</button>
+                </p>
+            </form>
+        </fieldset>
+    </div>
+
+    <div class="hobbies ">
+        <fieldset>
+            <form action="login " method="POST ">
+                <p>PONTOS DE INTERESSE</p>
+                <input type="checkbox " name="hobbies " id="hobbies "><label for="hobbies ">Música</label>
+                <input type="checkbox " name="hobbies " id="hobbies "><label for="hobbies ">Game</label>
+                <input type="checkbox " name="hobbies " id="hobbies "><label for="hobbies ">Cinema</label>
+                <input type="checkbox " name="hobbies " id="hobbies "><label for="hobbies ">Sinuca</label>
+                <input type="checkbox " name="hobbies " id="hobbies "><label for="hobbies ">Bar</label>
+                <input type="checkbox " name="hobbies " id="hobbies "><label for="hobbies ">Restaurante</label>
+                <input type="checkbox " name="hobbies " id="hobbies "><label for="hobbies ">Praia</label>
+                <input type="checkbox " name="hobbies " id="hobbies "><label for="hobbies ">Montanhas</label>
+                <input type="checkbox " name="hobbies " id="hobbies "><label for="hobbies ">Parques</label>
+                <input type="checkbox " name="hobbies " id="hobbies "><label for="hobbies ">Cachoeiras</label>
+                <input type="checkbox " name="hobbies " id="hobbies "><label for="hobbies ">Museu</label>
+                <input type="checkbox " name="hobbies " id="hobbies "><label for="hobbies ">Teatro</label>
+                <p>
+                    <button class="botao " type="submit ">Enviar</button>
+                    <button class="botao " type="reset ">Cancelar</button>
+                </p>
+            </form>
+        </fieldset>
+    </div>
+
+
+    <div class="idade ">
+        <fieldset>
+            <form action="login " method="POST ">
+                <p>SELECIONE A SUA IDADE</p>
+                <input type="radio " name="idade " id="idade " label for="idade ">Idade Menor de 18 anos</label>
+                <input type="radio " name="idade " id="idade " label for="idade ">Idade Maior ou Igual a 18 anos</label>
+            </form>
+        </fieldset>
+    </div>
+
+    <footer>
+        <div>
+            <div id="div " class="container-fluid ">
+                <div class="row justify-content-center align-items-start ' id='a3 '">
+                    <div id="aluno1" class="col-lg-4 col-xs-6">
+                        <h1 class="text">Fernanda Magalhães</h1>
+                        <h2 class="text2">Responsável pela criação e estilização do site.</h2>
+                        <a href="https://github.com/NandaMagal" target="_blank">
+                            <img class="img" src="icon/github.png" alt="githubFernandaMagalhães">
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/fernandaribeirodemagalhaes/" target="_blank ">
+                            <img class="img" src="icon/linkedin.png" alt="LinkedinFernandaMagalhães">
+                        </a>
+                    </div>
+
+                    <div id="aluno2" class="col-lg-4 col-xs-6">
+                        <h1 class="text">Jonata Costa</h1>
+                        <h2 class="text2">Responsável pela criação e estilização do site.</h2>
+                        <a href="" target="_blank ">
+                            <img class=" img" src="icon/github.png" alt="https://github.com/Jonatacosta">
+                        </a>
+
+                        <a href="" target="_blank ">
+                            <img class="img" src="icon/linkedin.png" alt="https://www.linkedin.com/in/jonata-santos-aa314116a/ ">
+                        </a>
+                    </div>
+
+                    <div id="aluno3" class="col-lg-4 col-xs-6">
+                        <h1 class="text">Cristiane</h1>
+                        <h2 class="text2">Responsável pela criação e estilização do site.</h2>
+                        <a href="#" target="_blank ">
+                            <img class="img" src="icon/github.png" alt="">
+                        </a>
+
+                        <a href="#" target="_blank ">
+                            <img class="img" src="icon/linkedin.png" alt="">
+                        </a>
+                    </div>
+
+                    <div id="legenda1" class="container">
+                        <h1 class="legenda">Website desenvolvido em 2022.March </h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js " integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49 " crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js " integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy " crossorigin="anonymous "></script>
+</body>
+
+</html>
