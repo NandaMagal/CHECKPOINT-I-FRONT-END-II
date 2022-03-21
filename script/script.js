@@ -11,4 +11,24 @@ alert(meuTemplate);
 
 alert("No nosso projeto você poderá incluir suas experiências com passeios, cidades turísticas.");
 
-alert("Disponibilizamos para os usuários a inclusão de suas experiências e cidades visitadas.APROVEITE A EXPERIÊNCIA!!!! ");
+
+/*Modificando Classes*/
+
+let listaLi = document.querySelectorAll('li');
+console.log(listaLi);
+listaLi.forEach(li => {
+    li.classList.add('TituloLi');
+});
+/*IncluindoEstilo red Mode*/
+let body = document.querySelector('body');
+let listaLi = document.querySelector('li');
+let card = document.querySelectorAll('.itemcard');
+let subtitulo = document.querySelectorAll('h2');
+let conteudo = document.querySelectorAll('p');
+
+
+function redMode() {
+    body.classList.toggle('redMode');
+    titulo.classList.toggle('tituloLi');
+    card.forEach(div => div.classList.toggle('alteraItem'));
+};
