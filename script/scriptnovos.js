@@ -28,8 +28,21 @@ for (let i = 0; i < quantCards.length; i++) {
     h3 = nomeCidade[i].innerText;
     span = textodescricao[i].innerText;
     a = nomeUrl[i].innerText;
-
 }
+
+
+/* Validando o button submit */
+
+let formulario = document.querySelector("form");
+formulario.addEventListener("submit", function(event) {
+    event.preventDefault()
+});
+
+
+
+
+
+
 /*CAPTUTANDO INFORMAÇÕES DO CARD QUE O USUÁRIO INCLUIU DADOS*/
 
 let infousuario = document.querySelectorAll('.input-field');
