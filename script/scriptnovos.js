@@ -1,6 +1,6 @@
-let nomevisitante = prompt("Digite seu nome por gentileza.");
+/*let nomevisitante = prompt("Digite seu nome por gentileza.");
 alert("Seja muito bem vindo", +" " + nomevisitante);
-alert("Seja muito bem vindo", +nomevisitante);
+alert("Seja muito bem vindo", +nomevisitante); /*
 
 /* Capturar quantas cidades (cards o usuário deseja incluir)*/
 
@@ -17,12 +17,12 @@ let nomeUrl = document.querySelector('form.#url');
 class =cards  texto span recebe o nome da descricao do card de formulário.
 class =cards  img (precisa alterar para URL) recebe o nome da URL do card de formulário.
  */
+/*Temos que dar um jeito de colocar estas informaçoes que o usuario vai digitar dentro dos cards criados*/
 
-
-for (let i = 0; i < quantCards.length; i++) { <
+for (let i = 0; i < quantCards.length; i++) {
     h3 = nomeCidade[i].innerText;
     span = textodescricao[i].innerText;
-    button a = nomeUrl[i].innerText;
+    a = nomeUrl[i].innerText;
 
 }
 
@@ -39,7 +39,7 @@ let cidade6 = document.createElement('div');
 let container = document.querySelector('.container');
 
 divcidade1.innerHTML = `
-<div class="icon" >
+<div class="icon">
     <a href="assets/flower.jpeg " alt="Shop here. ">
     <h3>vitoria-es</h3>
     <span>Salvador é um município brasileiro e capital do estado da Bahia. Situada na Zona da Mata da Região Nordeste do Brasil, Salvador é notável em todo o país pela sua gastronomia. A influência africana em muitos aspectos culturais da cidade a torna o centro da cultura afro-brasileira.</span>
@@ -47,7 +47,7 @@ divcidade1.innerHTML = `
 </div>`;
 
 divcidade2.innerHTML = `   
-<div class="icon" >
+<div class="icon">
      <img src="assets/flower.jpeg " alt="Shop here. "></a>
             </div>
             <h3>Campos do Jordão</h3>
@@ -56,52 +56,55 @@ divcidade2.innerHTML = `
 </div>`
 
 divcidade3.innerHTML = `    
-<div class="icon ">
+<div class="icon">
 
-<img src="assets/flower.jpeg " alt="Shop here. "></a>
-</div>
-<h3>SALVADOR</h3>
-<span>Salvador é um município brasileiro e capital do estado da Bahia. Situada na Zona da Mata da Região Nordeste do Brasil, Salvador é notável em todo o país pela sua gastronomia. A influência africana em muitos aspectos culturais da cidade a torna o centro da cultura afro-brasileira.</span>
-<button a href="assets/flower.jpeg " alt="Shop here. ">mais informações</button>
+    <img src="assets/flower.jpeg " alt="Shop here. "></a>
+    </div>
+    <h3>SALVADOR</h3>
+    <span>Salvador é um município brasileiro e capital do estado da Bahia. Situada na Zona da Mata da Região Nordeste do Brasil, Salvador é notável em todo o país pela sua gastronomia. A influência africana em muitos aspectos culturais da cidade a torna o centro da cultura afro-brasileira.</span>
+    <button a href="assets/flower.jpeg " alt="Shop here. ">mais informações</button>
 </div>`
 
 divcidade4.innerHTML = `    
-<div class="icon ">
+<div class="icon">
 
-<img src="assets/flower.jpeg " alt="Shop here. "></a>
-</div>
-<h3>SALVADOR</h3>
-<span>Salvador é um município brasileiro e capital do estado da Bahia. Situada na Zona da Mata da Região Nordeste do Brasil, Salvador é notável em todo o país pela sua gastronomia. A influência africana em muitos aspectos culturais da cidade a torna o centro da cultura afro-brasileira.</span>
-<button a href="assets/flower.jpeg " alt="Shop here. ">mais informações</button>
+    <img src="assets/flower.jpeg " alt="Shop here. "></a>
+    </div>
+    <h3>SALVADOR</h3>
+    <span>Salvador é um município brasileiro e capital do estado da Bahia. Situada na Zona da Mata da Região Nordeste do Brasil, Salvador é notável em todo o país pela sua gastronomia. A influência africana em muitos aspectos culturais da cidade a torna o centro da cultura afro-brasileira.</span>
+    <button a href="assets/flower.jpeg " alt="Shop here. ">mais informações</button>
 </div>`
 
-divcidade5.innerHTML = ` <
-<div class="icon ">
+divcidade5.innerHTML = ` 
+<div class="icon">
 
-<img src="assets/flower.jpeg " alt="Shop here. "></a>
-</div>
-<h3>SALVADOR</h3>
-<span>Salvador é um município brasileiro e capital do estado da Bahia. Situada na Zona da Mata da Região Nordeste do Brasil, Salvador é notável em todo o país pela sua gastronomia. A influência africana em muitos aspectos culturais da cidade a torna o centro da cultura afro-brasileira.</span>
-<button a href="assets/flower.jpeg " alt="Shop here. ">mais informações</button>
+    <img src="assets/flower.jpeg " alt="Shop here. "></a>
+    </div>
+    <h3>SALVADOR</h3>
+    <span>Salvador é um município brasileiro e capital do estado da Bahia. Situada na Zona da Mata da Região Nordeste do Brasil, Salvador é notável em todo o país pela sua gastronomia. A influência africana em muitos aspectos culturais da cidade a torna o centro da cultura afro-brasileira.</span>
+    <button a href="assets/flower.jpeg " alt="Shop here. ">mais informações</button>
 </div>`
 
-divcidade6.innerHTML = ` <
-<div class="icon ">
+divcidade6.innerHTML = ` 
+<div class="icon">
 
-<img src="assets/flower.jpeg " alt="Shop here. "></a>
-</div>
-<h3>SALVADOR</h3>
-<span>Salvador é um município brasileiro e capital do estado da Bahia. Situada na Zona da Mata da Região Nordeste do Brasil, Salvador é notável em todo o país pela sua gastronomia. A influência africana em muitos aspectos culturais da cidade a torna o centro da cultura afro-brasileira.</span>
-<button a href="assets/flower.jpeg " alt="Shop here. ">mais informações</button>
+    <img src="assets/flower.jpeg " alt="Shop here. "></a>
+    </div>
+    <h3>SALVADOR</h3>
+    <span>Salvador é um município brasileiro e capital do estado da Bahia. Situada na Zona da Mata da Região Nordeste do Brasil, Salvador é notável em todo o país pela sua gastronomia. A influência africana em muitos aspectos culturais da cidade a torna o centro da cultura afro-brasileira.</span>
+    <button a href="assets/flower.jpeg " alt="Shop here. ">mais informações</button>
 </div>`
 
 
 function
 incluirCidades() {
-    container.appendChild(divcidade1);
-    container.appendChild(divcidade2);
-    container.appendChild(divcidade3);
-    container.appendChild(divcidade4);
-    container.appendChild(divcidade5);
-    container.appendChild(divcidade6);
+    document.container.appendChild(divcidade1);
+    document.container.appendChild(divcidade2);
+    document.container.appendChild(divcidade3);
+    document.container.appendChild(divcidade4);
+    document.container.appendChild(divcidade5);
+    document.container.appendChild(divcidade6);
 }
+
+/*Selecionamos um elemento do HTML*/
+let

@@ -14,21 +14,13 @@ alert("No nosso projeto você poderá incluir suas experiências com passeios, c
 
 /*Modificando Classes*/
 
-let listaLi = document.querySelectorAll('li');
-console.log(listaLi);
-listaLi.forEach(li => {
-    li.classList.add('TituloLi');
-});
-/*IncluindoEstilo red Mode*/
+
+/*IncluindoEstilo red Modo*/
 let body = document.querySelector('body');
-let listaLi = document.querySelector('li');
-let card = document.querySelectorAll('.itemcard');
-let subtitulo = document.querySelectorAll('h2');
-let conteudo = document.querySelectorAll('p');
+let card = document.querySelectorAll('itemcard');
 
 
 function redMode() {
-    body.classList.toggle('redMode');
-    titulo.classList.toggle('tituloLi');
+    body.classList.toggle('redModo');
     card.forEach(div => div.classList.toggle('alteraItem'));
 };

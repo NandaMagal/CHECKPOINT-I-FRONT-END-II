@@ -295,13 +295,13 @@ p {
 
 /*adicionando novas classes e alterando todo o body atraves de um botão e alterar texto classlist*/
 
-.redMode {
+.redModo {
     background-color: rgb(100, 18, 18);
     color: brown;
 }
 
-.tituloLi {
+.alteraItem {
     background-color: coral;
     font font-family: 'Times New Roman', sans-serif;
-    color: black;
+    border-color: black;
 }
