@@ -35,89 +35,34 @@ for (let i = 0; i < quantCards.length; i++) {
 let infousuario = document.querySelectorAll('.input-field');
 
 /*CAPTURANDO DADOS DOS CARDS JÁ EXISTENTES*/
-
+/*criando uma lista com o elemento pai ;*/
 let listaCards = document.querySelectorAll('.cards');
 
-/*CRIANDO UM NOVO CARD */
-let novoCard = document.createElement('.icon');
-novoCard.innerHTML = a;
-novoCard.innerText = h3;
-novoCard.
-
-
-
-let cidade1 = document.createElement('div');
-let cidade2 = document.createElement('div');
-let cidade3 = document.createElement('div');
-let cidade4 = document.createElement('div');
-let cidade5 = document.createElement('div');
-let cidade6 = document.createElement('div');
-
+/*capturando o card onde consta o formulario preenchido pelo usuário*/
 let container = document.querySelector('.container');
 
-divcidade1.innerHTML = `
-<div class="icon">
-    <a href="assets/flower.jpeg " alt="Shop here. ">
-    <h3>vitoria-es</h3>
-    <span>Salvador é um município brasileiro e capital do estado da Bahia. Situada na Zona da Mata da Região Nordeste do Brasil, Salvador é notável em todo o país pela sua gastronomia. A influência africana em muitos aspectos culturais da cidade a torna o centro da cultura afro-brasileira.</span>
+/*CRIANDO UM NOVO CARD */
+let novoCard = document.createElement('div');
+let nomeCidade = ;
+let textoDescricao = ;
+let infoUrl = ;
 
-</div>`;
-
-divcidade2.innerHTML = `   
-<div class="icon">
-     <img src="assets/flower.jpeg " alt="Shop here. "></a>
+novoCard.innerHTML = `
+ <div class="input-field">
+     <input type="text" name="username" id="cidade" placeholder="Registre o nome da cidade">${nomeCidade}
+        <div class="underline"></div>
+        </div>
+            <div class="input-field">
+                <input type="text" name="descricao" id="descricao" placeholder="Coloque a descrição da cidade">${textoDescricao}
+                <div class="underline"></div>
             </div>
-            <h3>Campos do Jordão</h3>
-            <span>Campos do Jordão é um município na Serra da Mantiqueira, no Brasil, e faz parte do estado de São Paulo. Engloba uma cidade com o mesmo nome, onde é comum a arquitetura de estilo suíço. Abrangendo um terço do município, as florestas de pinheiros do parque e as montanhas albergam várias aves e animais em risco de extinção.</span>
-            <button a href="assets/flower.jpeg " alt="Shop here. ">mais informações</button>
-</div>`
-
-divcidade3.innerHTML = `    
-<div class="icon">
-
-    <img src="assets/flower.jpeg " alt="Shop here. "></a>
-    </div>
-    <h3>SALVADOR</h3>
-    <span>Salvador é um município brasileiro e capital do estado da Bahia. Situada na Zona da Mata da Região Nordeste do Brasil, Salvador é notável em todo o país pela sua gastronomia. A influência africana em muitos aspectos culturais da cidade a torna o centro da cultura afro-brasileira.</span>
-    <button a href="assets/flower.jpeg " alt="Shop here. ">mais informações</button>
-</div>`
-
-divcidade4.innerHTML = `    
-<div class="icon">
-
-    <img src="assets/flower.jpeg " alt="Shop here. "></a>
-    </div>
-    <h3>SALVADOR</h3>
-    <span>Salvador é um município brasileiro e capital do estado da Bahia. Situada na Zona da Mata da Região Nordeste do Brasil, Salvador é notável em todo o país pela sua gastronomia. A influência africana em muitos aspectos culturais da cidade a torna o centro da cultura afro-brasileira.</span>
-    <button a href="assets/flower.jpeg " alt="Shop here. ">mais informações</button>
-</div>`
-
-divcidade5.innerHTML = ` 
-<div class="icon">
-
-    <img src="assets/flower.jpeg " alt="Shop here. "></a>
-    </div>
-    <h3>SALVADOR</h3>
-    <span>Salvador é um município brasileiro e capital do estado da Bahia. Situada na Zona da Mata da Região Nordeste do Brasil, Salvador é notável em todo o país pela sua gastronomia. A influência africana em muitos aspectos culturais da cidade a torna o centro da cultura afro-brasileira.</span>
-    <button a href="assets/flower.jpeg " alt="Shop here. ">mais informações</button>
-</div>`
-
-divcidade6.innerHTML = ` 
-<div class="icon">
-
-    <img src="assets/flower.jpeg " alt="Shop here. "></a>
-    </div>
-    <h3>SALVADOR</h3>
-    <span>Salvador é um município brasileiro e capital do estado da Bahia. Situada na Zona da Mata da Região Nordeste do Brasil, Salvador é notável em todo o país pela sua gastronomia. A influência africana em muitos aspectos culturais da cidade a torna o centro da cultura afro-brasileira.</span>
-    <button a href="assets/flower.jpeg " alt="Shop here. ">mais informações</button>
-</div>`
-
+            <div class="input-url">
+                <input type="url" name="url" id="url" placeholder="Url da imagem">${infoUrl}
+                <label for="nome"></label>
+            </div>
+`
 
 function incluirCidades() {
-    document.container.appendChild(divcidade1);
-    document.container.appendChild(divcidade2);
-    document.container.appendChild(divcidade3);
-    document.container.appendChild(divcidade4);
-    document.container.appendChild(divcidade5);
-    document.container.appendChild(divcidade6);
+    document.container.appendChild(novoCard);
+
 }
