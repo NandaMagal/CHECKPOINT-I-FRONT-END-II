@@ -2,8 +2,12 @@
 
 alert("OLÁ VISITANTE!");
 
-let nomevisitante = prompt("Digite seu nome por gentileza.");
-alert("Seja muito bem vindo", +" " + nomevisitante);
+
+/*Tentando utilizar Template String */
+
+let nomeVisitante = prompt('Digite seu nome por gentileza.');
+let meuTemplate = `Seja muito bem vindo {$nomeVisitante}`;
+alert(meuTemplate);
 
 alert("No nosso projeto você poderá incluir suas experiências com passeios, cidades turísticas.");
 
