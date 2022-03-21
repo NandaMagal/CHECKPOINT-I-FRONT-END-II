@@ -2,6 +2,11 @@
 alert("Seja muito bem vindo", +" " + nomevisitante);
 alert("Seja muito bem vindo", +nomevisitante); /*
 
+
+
+/* Criar novos cards a partir da inclusao feita pelo usuário*/
+
+
 /* Capturar quantas cidades (cards o usuário deseja incluir)*/
 
 let quantCards = prompt("Prezado visitante favor incluir quantos Cards(cidades) deseja incluir ?");
@@ -25,9 +30,21 @@ for (let i = 0; i < quantCards.length; i++) {
     a = nomeUrl[i].innerText;
 
 }
+/*CAPTUTANDO INFORMAÇÕES DO CARD QUE O USUÁRIO INCLUIU DADOS*/
+
+let infousuario = document.querySelectorAll('.input-field');
+
+/*CAPTURANDO DADOS DOS CARDS JÁ EXISTENTES*/
+
+let listaCards = document.querySelectorAll('.cards');
+
+/*CRIANDO UM NOVO CARD */
+let novoCard = document.createElement('.icon');
+novoCard.innerHTML = a;
+novoCard.innerText = h3;
+novoCard.
 
 
-/* Criar novos cards a partir da inclusao feita pelo usuário*/
 
 let cidade1 = document.createElement('div');
 let cidade2 = document.createElement('div');
@@ -96,8 +113,7 @@ divcidade6.innerHTML = `
 </div>`
 
 
-function
-incluirCidades() {
+function incluirCidades() {
     document.container.appendChild(divcidade1);
     document.container.appendChild(divcidade2);
     document.container.appendChild(divcidade3);
@@ -105,6 +121,3 @@ incluirCidades() {
     document.container.appendChild(divcidade5);
     document.container.appendChild(divcidade6);
 }
-
-/*Selecionamos um elemento do HTML*/
-let
